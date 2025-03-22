@@ -66,7 +66,7 @@ class DatabaseManager:
         conn = self._get_connection()
         cursor = conn.cursor()
 
-        query = "SELECT * FROM todos"
+        query = "SELECT * FROM todos WHERE 1=1"
         params = []
 
         # フィルタ条件の追加
